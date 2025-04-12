@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
 import NewsCard from "./components/NewsCard";
 import ArticleDetails from "./components/ArticleDetails";
-import Footer from "./components/Footer"; // Import Footer component
+import NewsFeed from './components/NewsFeed';
+import Footer from "./components/Footer"; 
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -71,7 +72,7 @@ export default function App() {
         />
       )}
 
-      {/* Footer component */}
+      <NewsFeed />
       <Footer />
     </div>
   );
